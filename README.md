@@ -24,10 +24,12 @@ Features include creating tasks, viewing tasks, and JWT-based authentication for
 ---
 
 ## how to run 
-in cmd 
+in cmd
+
 for frontend
 cd Frontend 
 npm run dev
+
 
 for backend
 node server.js
