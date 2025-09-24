@@ -3,7 +3,7 @@ import cors from 'cors';
 import db from './db.js';
 import signuprouter from './Router/signuprouter.js';
 import loginrouter from './Router/loginrouter.js';
-import Taskroute from './models/Task.js';
+import taskrouter from './Router/taskrouter.js';
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -18,7 +18,7 @@ app.use('/signup', signuprouter);
 
 app.use('/login', loginrouter);
 
-app.use('/tasks', Taskroute);
+app.use('/tasks', taskrouter);
 
 app.listen(process.env.PORT, () => {
   console.log(

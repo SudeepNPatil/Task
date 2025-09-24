@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_SECRET = process.env.JWT_SECRET || 'webintern@1234#$';
 
 export const authMiddleware = (req, res, next) => {
   const token = req.headers.authorization?.split(' ')[1];
