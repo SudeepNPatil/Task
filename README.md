@@ -25,13 +25,17 @@ Features include creating tasks, viewing tasks, and JWT-based authentication for
 
 ## how to run 
 in cmd
+git clone https://github.com/SudeepNPatil/Task.git
 
 for frontend
 cd Frontend 
+npm install
 npm run dev
 
 
 for backend
+cd Backend
+npm install
 node server.js
 
 
